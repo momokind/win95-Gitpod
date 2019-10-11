@@ -4,7 +4,7 @@ ports:
 - port: 6080
 tasks:
 - init: >
-    mkdir src/images &&
+    mkdir -p src/images &&
     cp /home/gitpod/windows95.img src/images &&
     npm install
   command: npm start
